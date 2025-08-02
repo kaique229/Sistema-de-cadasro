@@ -9,9 +9,36 @@
 <body>
 
     <div id="header">
-        <button id="btnEntrar" onclick="Agendar()">Agendar consulta</button>
+        <button class="btnEntrar" onclick="Agendar()">Agendar consulta</button>
+          <button class="btnEntrar" onclick="agendados()">agenda</button>
+               <button class="btnEntrar" id="btnEntrar" onclick="showLoginPopup()">Entrar</button>
     </div>
 </div>
+
+  <div id="login-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Entrar</button>
+             <button id="btn01">Cadastrar-se</button>        
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <div id="banner">
         <h1 id="BannerText">Estetica</h1>
@@ -42,36 +69,18 @@
         </div>
     </div>
 
-    <div class="agendamento-menu" id="agendamentoMenu">
-        <form action="/agendar" method="post" id="form">
-            <input type="text" id="nome" name="nome" required placeholder="Nome:">
-            <input type="date" id="data" name="data" required placeholder="Data:">
-            <input type="time" id="hora" name="hora" required placeholder="Hora:">
-            <button type="submit">Agendar</button>
-        </form>
-    </div>
-
 </div>
 
         <br>
 
 
-        <div class="service" id="service2" onclick="toggleMenu2('agendamentoMenu2')">
+        <div class="service" id="service2" onclick="toggleMenu('agendamentoMenu')">
             <img src="img/Limpeza-de-pele.jpg" alt="Serviço 2"  class="service-image">
              <div class="msg">
             <h2>Limpeza de Pele</h2>
             <p class="description">Tratamento completo de limpeza de pele para rejuvenescimento.</p>
         </div>
 </div>
-
-<div class="agendamento-menu2" id="agendamentoMenu2">
-    <form action="/agendar" method="post" id="form2">
-        <input type="text" id="nome2" name="nome" required placeholder="Nome:">
-        <input type="date" id="data2" name="data" required placeholder="Data:">
-        <input type="time" id="hora2" name="hora" required placeholder="Hora:">
-        <button type="submit">Agendar</button>
-    </form>
-        </div>
     </div>
 
     
@@ -80,7 +89,37 @@
   
     </section>
 
-    <div id="di"></div>
-    
+
+
+
+<div class="agendamento-menu" id="agendamentoMenu">
+    <div id="agendamento00">
+    <h1>Agendamentos</h1>
+    <p>Agende seu horario </p>
+    </div>
+
+    <form action="/agendar" method="post" id="form">
+        <input type="text" id="nome" name="nome" required placeholder="Nome:" class="men">
+        <input type="email" id="email" name="email" required placeholder="Email:" class="men">
+        
+        <input list="servicos-sugeridos" id="estetica" name="estetica" required placeholder="Serviço de Estética:" class="men">
+        <datalist id="servicos-sugeridos">
+            <option value="Massagem Modeladora">
+            <option value="Limpeza de Pele">
+            <option value="Drenagem Linfática">
+            <option value="Massagem Relaxante">
+            <option value="Peeling Facial">
+        </datalist>
+        
+        <input type="date" id="dia" name="dia" required placeholder="Dia:" class="men">
+        <input type="time" id="hora" name="hora" required placeholder="Hora:" class="men">
+        <button type="submit">Agendar</button>
+    </form>
+</div>
+
+
+ 
+
+
 </body>
 </html>
