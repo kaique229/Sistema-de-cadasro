@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+#header {
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+
+
+
+#main-image {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 200px;
+
+}
+
+#BannerText {
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    top: 40%;
+}
+
+#banner{
+    position: relative;
+    width: 100%;
+    background-position: center;
+}
+
+#btnEntrar{
+    background-color: #fa06b5b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+#btnEntrar:hover {
+    background-color: #fa06b5;
+}
+
+
+
+.service-image{
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: #e0e0e0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.service:hover {
+    transform: scale(1.02); 
+    cursor: pointer; 
+}
+
+.msg{
+display: flex;
+flex-direction: column;
+padding: 20px;
+width: 80%;
+border-radius: 10px;
+}
+
+
+
+.agendamento-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+
+.agendamento-menu.visible {
+  max-height: 500px; 
+}
+
+
+
+#agendamentoMenu{
+    width: 80%;
+    border-radius: 10px;
+   background-color: rgb(127, 253, 255);
+   margin-left: 20px;
+   width: 80%;
+    height: auto;
+   
+    margin-top: -20px;
+
+}
+
+.agend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+.agendamento-menu2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+
+.agendamento-menu2.visible {
+  max-height: 500px; 
+}
+
+
+
+
+#agendamentoMenu2{
+    width: 80%;
+    border-radius: 10px;
+   background-color: rgb(127, 253, 255);
+   margin-left: 11%;
+   width: 80%;
+    height: auto;
+    margin-top: -20px;
+
+}
+
+#form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+#di{
+    background-color: #ffffff00;
+width: 100%;
+height: 500px;
+}

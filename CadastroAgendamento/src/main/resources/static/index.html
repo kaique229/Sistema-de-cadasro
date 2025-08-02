@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Estetica</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
 
+    <div id="header">
+        <button id="btnEntrar" onclick="Agendar()">Agendar consulta</button>
+    </div>
+</div>
+
+    <div id="banner">
+        <h1 id="BannerText">Estetica</h1>
+        <img src="img/Massoterapia-1.jpg" alt="img"id="main-image">
+    </div>
+       
+    <br><br>
+
+
+
+
+<section id="secao-agendamento">
+
+
+
+    <h1>Serviços</h1>
+
+    <div>
+
+       <div class="agend">
+
+    <div class="service" id="service1" onclick="toggleMenu('agendamentoMenu')">
+        <img src="img/Drenomodeladora-800x800.webp" alt="Serviço 1" class="service-image">
+        
+        <div class="msg">
+            <h2>Massagem Modeladora</h2>
+            <p>Técnica de massagem manual que visa remodelar o corpo, reduzir medidas e melhorar o contorno corporal através de movimentos vigorosos e repetitivos.</p>
+        </div>
+    </div>
+
+    <div class="agendamento-menu" id="agendamentoMenu">
+        <form action="/agendar" method="post" id="form">
+            <input type="text" id="nome" name="nome" required placeholder="Nome:">
+            <input type="date" id="data" name="data" required placeholder="Data:">
+            <input type="time" id="hora" name="hora" required placeholder="Hora:">
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+</div>
+
+        <br>
+
+
+        <div class="service" id="service2" onclick="toggleMenu2('agendamentoMenu2')">
+            <img src="img/Limpeza-de-pele.jpg" alt="Serviço 2"  class="service-image">
+             <div class="msg">
+            <h2>Limpeza de Pele</h2>
+            <p class="description">Tratamento completo de limpeza de pele para rejuvenescimento.</p>
+        </div>
+</div>
+
+<div class="agendamento-menu2" id="agendamentoMenu2">
+    <form action="/agendar" method="post" id="form2">
+        <input type="text" id="nome2" name="nome" required placeholder="Nome:">
+        <input type="date" id="data2" name="data" required placeholder="Data:">
+        <input type="time" id="hora2" name="hora" required placeholder="Hora:">
+        <button type="submit">Agendar</button>
+    </form>
+        </div>
+    </div>
+
+    
+</div>
+    
+  
+    </section>
+
+    <div id="di"></div>
+    
 </body>
 </html>
